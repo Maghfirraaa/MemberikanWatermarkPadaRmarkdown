@@ -429,19 +429,12 @@ div.tocify {
 </div>
 
 
-<div id="pengertian-watermark" class="section level2">
-<h2>1. Pengertian watermark</h2>
-<p>Watermark adalah sebuah tanda baik berupa tulisan maupun gambar logo yang tertanam pada foto atau gambar digital. Tanda ini biasanya untuk memberikan informasi kepada orang lain bahwa foto tersebut adalah hasil karya miliknya.</p>
-</div>
-<div id="fungsi-dan-keuntungan-watermark" class="section level2">
-<h2>2. Fungsi dan keuntungan watermark</h2>
-<p>Fungsi watermark adalah sebagai hak cipta, promosi dan sebagai identitas sedangkan keuntungannya adalah Orang lain akan mudah mengenali hasil karya kita, tidak mudah dibajak atau di duplikasi, brand atau nama usaha akan dikenal banyak orang, bagi sebagian orang dapat menumbuhkan rasa kebanggan tersendiri.</p>
-</div>
+<p>Baik, pada bagiann ini akan menjelaskan cara memberikan watermark di Rmarkdown.</p>
 <div id="cara-menambahkan-watermark-di-rmarkdown" class="section level2">
-<h2>3. Cara menambahkan watermark di Rmarkdown</h2>
+<h2>Cara menambahkan watermark di Rmarkdown :</h2>
 </div>
 <div id="membuat-file-css-di-rstudio" class="section level2">
-<h2>3.1. Membuat file css di Rstudio</h2>
+<h2>1. Membuat file css di Rstudio</h2>
 <p>Untuk membuat watermark di Rmarkdown, saya menambahkan new file .css untuk mengatur letak dan transparasi watermark. Berikut ini kode yang digunakan pada file .css :</p>
 <pre><code>.watermark {
   opacity: 0.2;
@@ -453,7 +446,7 @@ div.tocify {
 }</code></pre>
 </div>
 <div id="menguhubungkan-.rmd-dengan-.css" class="section level2">
-<h2>3.2. Menguhubungkan .rmd dengan .css</h2>
+<h2>2. Menguhubungkan .rmd dengan .css</h2>
 <p>Untuk menggubungkan 2 file ini kita bisa menambahkan code pada bagian atas di output, seperti berikut :</p>
 <pre><code>title: &quot;...&quot;
 author: &quot;...&quot;
@@ -464,10 +457,10 @@ output:
     </code></pre>
 </div>
 <div id="menambahkan-watermark" class="section level2">
-<h2>3.3. Menambahkan watermark</h2>
+<h2>3. Menambahkan watermark</h2>
 </div>
 <div id="watermark-pada-halaman" class="section level2">
-<h2>3.3.1. Watermark pada halaman</h2>
+<h2>3.1. Watermark pada halaman</h2>
 <p>Disini, kita bisa memberikan watermark pada halaman Rmarkdown dengan gambar maupun tulisan. Berikut ini code untuk memberikan watermark pada halaman berupa tulisan :</p>
 <pre><code>&lt;div class=&quot;watermark&quot;&gt;INI WATERMARK&lt;/div&gt;</code></pre>
 <p>Berikut ini code untuk memberikan watermark pada halaman berupa gambar :</p>
@@ -478,7 +471,7 @@ output:
 <p>Dan disini saya menggunakan watermark berupa gambar(Logo UIN Malang) pada Rmarkdown.</p>
 </div>
 <div id="watermark-pada-gambar" class="section level2">
-<h2>3.4. Watermark pada gambar</h2>
+<h2>3.2. Watermark pada gambar</h2>
 <p>Seperti materi sebelumnya, saya akan memanggil foto pada file manager. sebelumnya saya akan menginstal EBImage terlebih dahulu, berikut codenya :</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Install package</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
@@ -490,7 +483,7 @@ output:
 <pre><code>## package &#39;EBImage&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\HP\AppData\Local\Temp\Rtmpo7VJsl\downloaded_packages</code></pre>
+##  C:\Users\HP\AppData\Local\Temp\Rtmp0c9lTW\downloaded_packages</code></pre>
 <pre><code>## Old packages: &#39;BiocGenerics&#39;, &#39;BiocManager&#39;, &#39;bitops&#39;, &#39;cluster&#39;, &#39;highr&#39;,
 ##   &#39;knitr&#39;, &#39;Matrix&#39;, &#39;mgcv&#39;, &#39;packrat&#39;, &#39;RCurl&#39;, &#39;rsconnect&#39;, &#39;survival&#39;,
 ##   &#39;tiff&#39;, &#39;tinytex&#39;, &#39;xfun&#39;</code></pre>
