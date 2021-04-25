@@ -429,7 +429,7 @@ div.tocify {
 </div>
 
 
-<p>Baik, pada bagiann ini akan menjelaskan cara memberikan watermark di Rmarkdown.</p>
+<p>Baik, pada bagian ini akan menjelaskan cara memberikan watermark di Rmarkdown.</p>
 <div id="cara-menambahkan-watermark-di-rmarkdown" class="section level2">
 <h2>Cara menambahkan watermark di Rmarkdown :</h2>
 </div>
@@ -458,9 +458,8 @@ output:
 </div>
 <div id="menambahkan-watermark" class="section level2">
 <h2>3. Menambahkan watermark</h2>
-</div>
-<div id="watermark-pada-halaman" class="section level2">
-<h2>3.1. Watermark pada halaman</h2>
+<div id="watermark-pada-halaman" class="section level3">
+<h3>3.1. Watermark pada halaman</h3>
 <p>Disini, kita bisa memberikan watermark pada halaman Rmarkdown dengan gambar maupun tulisan. Berikut ini code untuk memberikan watermark pada halaman berupa tulisan :</p>
 <pre><code>&lt;div class=&quot;watermark&quot;&gt;INI WATERMARK&lt;/div&gt;</code></pre>
 <p>Berikut ini code untuk memberikan watermark pada halaman berupa gambar :</p>
@@ -470,8 +469,8 @@ output:
 </div>
 <p>Dan disini saya menggunakan watermark berupa gambar(Logo UIN Malang) pada Rmarkdown.</p>
 </div>
-<div id="watermark-pada-gambar" class="section level2">
-<h2>3.2. Watermark pada gambar</h2>
+<div id="watermark-pada-gambar" class="section level3">
+<h3>3.2. Watermark pada gambar</h3>
 <p>Seperti materi sebelumnya, saya akan memanggil foto pada file manager. sebelumnya saya akan menginstal EBImage terlebih dahulu, berikut codenya :</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Install package</span></span>
 <span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (<span class="sc">!</span><span class="fu">requireNamespace</span>(<span class="st">&quot;BiocManager&quot;</span>, <span class="at">quietly =</span> <span class="cn">TRUE</span>))</span>
@@ -483,7 +482,7 @@ output:
 <pre><code>## package &#39;EBImage&#39; successfully unpacked and MD5 sums checked
 ## 
 ## The downloaded binary packages are in
-##  C:\Users\HP\AppData\Local\Temp\Rtmp0c9lTW\downloaded_packages</code></pre>
+##  C:\Users\HP\AppData\Local\Temp\RtmpuOlkoO\downloaded_packages</code></pre>
 <pre><code>## Old packages: &#39;BiocGenerics&#39;, &#39;BiocManager&#39;, &#39;bitops&#39;, &#39;cluster&#39;, &#39;highr&#39;,
 ##   &#39;knitr&#39;, &#39;Matrix&#39;, &#39;mgcv&#39;, &#39;packrat&#39;, &#39;RCurl&#39;, &#39;rsconnect&#39;, &#39;survival&#39;,
 ##   &#39;tiff&#39;, &#39;tinytex&#39;, &#39;xfun&#39;</code></pre>
@@ -496,6 +495,7 @@ output:
 <span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="fu">display</span>(img, <span class="at">method=</span><span class="st">&quot;raster&quot;</span>)</span>
 <span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="fu">text</span>(<span class="at">x =</span> <span class="dv">20</span>, <span class="at">y =</span> <span class="dv">20</span>, <span class="at">label =</span> <span class="st">&quot;UIN Maulana Malik Ibrahim Malang&quot;</span>, <span class="at">adj =</span> <span class="fu">c</span>(<span class="dv">0</span>,<span class="dv">1</span>), <span class="at">col =</span> <span class="st">&quot;White&quot;</span>, <span class="at">cex =</span> <span class="dv">2</span>)</span></code></pre></div>
 <p><img src="Program_files/figure-html/unnamed-chunk-3-1.png" width="672" /></p>
+</div>
 </div>
 <div id="daftar-pustaka" class="section level2">
 <h2>Daftar Pustaka</h2>
